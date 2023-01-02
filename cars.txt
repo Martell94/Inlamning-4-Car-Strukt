@@ -19,3 +19,10 @@ Colour: White
 Model Year: 2003
 Transmission type: Manual
 ------------------------------------------------------------
+------------------------------------------------------------
+Make: Skoda
+Model: Octavia RS
+Colour: Green
+Model Year: 2003
+Transmission type: Automatic
+------------------------------------------------------------
