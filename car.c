@@ -5,12 +5,12 @@
 								(void)car_init:
 						  Initierar struktinstanser.
 
-			self: Pekare till den struktinstans vi önskar initiera.
-			make: Bilens märke.
+			self: Pekare till den struktinstans vi Ã¶nskar initiera.
+			make: Bilens mÃ¤rke.
 			model: Bilens modelltyp.
-			colour: Bilens färg.
-			modelyear: Bilens modellår.
-			transmission: Bilens växellådetyp.
+			colour: Bilens fÃ¤rg.
+			modelyear: Bilens modellÃ¥r.
+			transmission: Bilens vÃ¤xellÃ¥detyp.
 ********************************************************************************/
 void car_init(car_t* self, 
 			  char* make,
@@ -28,7 +28,6 @@ void car_init(car_t* self,
 	self->change_colour = car_change_colour;
 	self->change_transmission = car_change_transmission;
 	self->print = car_print;
-	//self->array_print = car_array_print;
 
 	return;
 }
@@ -37,10 +36,10 @@ void car_init(car_t* self,
 /********************************************************************************
 								(void)car_print_all:
 					Skriver ut struktinstansernas information till
-					både terminal och angiven fil.
+					bÃ¥de terminal och angiven fil.
 
-			self: Pekare till den struktinstans vi önskar skriva ut.
-			ostream: Önskad utström, antingen till terminal eller angiven fil.
+			self: Pekare till den struktinstans vi Ã¶nskar skriva ut.
+			ostream: Ã–nskad utstrÃ¶m, antingen till terminal eller angiven fil.
 ********************************************************************************/
 void car_print_all(car_t* self, FILE* ostream){
 
@@ -56,8 +55,8 @@ void car_print_all(car_t* self, FILE* ostream){
 					Skriver ut struktinstansernas information till 
 					antingen terminal, eller angiven fil.
 
-			self: Pekare till den struktinstans vi önskar skriva ut.
-			ostream: Önskad utström, antingen till terminal eller angiven fil.
+			self: Pekare till den struktinstans vi Ã¶nskar skriva ut.
+			ostream: Ã–nskad utstrÃ¶m, antingen till terminal eller angiven fil.
 ********************************************************************************/
 void car_print(car_t* self, FILE* ostream) {
 
@@ -79,9 +78,9 @@ void car_print(car_t* self, FILE* ostream) {
 
 /********************************************************************************
 								(void)car_clear:
-					  Tömmer struktinstanser på information. 
+					  TÃ¶mmer struktinstanser pÃ¥ information. 
 
-			self: Pekare till den struktinstans vi önskar nollställa.
+			self: Pekare till den struktinstans vi Ã¶nskar nollstÃ¤lla.
 
 ********************************************************************************/
 void car_clear(car_t* self){
@@ -101,9 +100,9 @@ void car_clear(car_t* self){
 
 /********************************************************************************
 								(void)car_delete:
-	Raderar struktinstansen helt och frigör det minnesutrymme den ockuperade.
+	Raderar struktinstansen helt och frigÃ¶r det minnesutrymme den ockuperade.
 
-			self: Pekare till den struktinstans vi önskar radera.
+			self: Pekare till den struktinstans vi Ã¶nskar radera.
 
 ********************************************************************************/
 void car_delete(car_t** self){
@@ -116,10 +115,10 @@ void car_delete(car_t** self){
 
 /********************************************************************************
 							(void)car_change_colour:
-					  Ändrar färg på angiven struktinstans.
+					  Ã„ndrar fÃ¤rg pÃ¥ angiven struktinstans.
 
-			self: Pekare till den struktinstans vi önskar ändra.
-			new_colour: Den nya färg vi önskar tillskriva struktinstansen.
+			self: Pekare till den struktinstans vi Ã¶nskar Ã¤ndra.
+			new_colour: Den nya fÃ¤rg vi Ã¶nskar tillskriva struktinstansen.
 
 ********************************************************************************/
 void car_change_colour(car_t* self, char* new_colour){
@@ -132,10 +131,10 @@ void car_change_colour(car_t* self, char* new_colour){
 
 /********************************************************************************
 						  (void)car_change_transmission:
-					  Ändrar växellådetyp på angiven struktinstans.
+					  Ã„ndrar vÃ¤xellÃ¥detyp pÃ¥ angiven struktinstans.
 
-			self: Pekare till den struktinstans vi önskar ändra.
-			transmission_type: Den typ av växellåda vi önskar ändra till.
+			self: Pekare till den struktinstans vi Ã¶nskar Ã¤ndra.
+			transmission_type: Den typ av vÃ¤xellÃ¥da vi Ã¶nskar Ã¤ndra till.
 
 ********************************************************************************/
 void car_change_transmission(car_t* self, char* transmission_type){
